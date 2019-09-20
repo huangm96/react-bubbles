@@ -1,17 +1,15 @@
 import {
-  
   LOGIN_START,
   LOGIN_SUCCESS,
   LOGIN_FAILURE,
- 
+  
 } from "../actions";
 
-
 const initialState = {
+  colors: [],
   isFetching: false,
   isLogined: true,
-  
-  
+  signInErrorMessage: false
 };
 
 export const reducer = (state = initialState, action) => {
@@ -22,11 +20,11 @@ export const reducer = (state = initialState, action) => {
       };
     case LOGIN_SUCCESS:
       return {
-        ...state,
+        ...state
       };
     case LOGIN_FAILURE:
       return {
-        ...state,
+        ...state
       };
     
     default:
