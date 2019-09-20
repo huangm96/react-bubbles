@@ -6,9 +6,8 @@ import {
 } from "../actions";
 
 const initialState = {
-  colors: [],
-  isFetching: false,
-  isLogined: true,
+ 
+  isLogined: false,
   signInErrorMessage: false
 };
 
@@ -16,15 +15,20 @@ export const reducer = (state = initialState, action) => {
   switch (action.type) {
     case LOGIN_START:
       return {
-        ...state
+        ...state,
+        isLogined: false,
+        signInErrorMessage: false
       };
     case LOGIN_SUCCESS:
       return {
-        ...state
+          ...state,
+          isLogined: true,
       };
     case LOGIN_FAILURE:
       return {
-        ...state
+        ...state,
+        isLogined: false,
+        signInErrorMessage: true
       };
     
     default:
