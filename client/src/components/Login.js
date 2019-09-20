@@ -18,9 +18,9 @@ const Login = (props) => {
     
   };
   return (
-    <>
+    <div className="LoginContainer">
       <h1>Welcome to the Bubble App!</h1>
-      <div className="LoginContainer">
+      
         <form onSubmit={handleSubmit} className="loginForm">
           <div className="info-input">
             <label>User Name</label>
@@ -47,18 +47,13 @@ const Login = (props) => {
         </form>
         
       </div>
-    </>
+    
   );
 };
-const mapStateToProps = state => {
-  console.log(state);
-  return {
-    
-  };
-};
+
 
 export default connect(
-  mapStateToProps,
+  null,
   { getLogin }
 )(Login);
 
