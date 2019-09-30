@@ -97,3 +97,45 @@ form {
     margin-top: 16px;
   }
 }
+
+.LoginContainer{
+  margin:50px auto;
+  display: flex;
+  flex-direction: column;
+    form{
+  margin:10px auto;
+  width:300px;
+  display:flex;
+  flex-direction: column;
+  
+}
+.info-input{
+  margin: 10px 0;
+  display:flex;
+  flex-direction: column;
+}
+label{
+  padding: 0;
+  margin: 0 0 5px 0;
+  font-Weight: bold;
+  font-size: 1.2rem;
+}
+input{
+  height: 30px;
+  width:300px;
+  font-size: 1.2rem;
+}
+.form-button{
+  width:100px;
+  margin: 10px auto;
+  font-size: 1.2rem;
+}
+.errorMessage{
+  margin: 15px 0;
+  text-align: center;
+  font-Weight: bold;
+  font-size: 1.5rem;
+  color:red;
+  
+}
+}
